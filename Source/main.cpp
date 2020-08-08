@@ -1,11 +1,9 @@
 #include "main.hpp"
 
-#include <chrono>
 #include <cstdlib>
 #include <iostream>
+#include <random>
 #include <stdexcept>
-
-namespace chr = std::chrono;
 
 int main() {
 	try {
@@ -26,10 +24,12 @@ void hello() {
 }
 
 void once_in_a_blue_moon() {
-	auto time = chr::system_clock::now().time_since_epoch();
-	auto seconds = chr::duration_cast<chr::seconds>(time).count();
+	std::random_device rand_dev;
+	std::mt19937 rng(rand_dev());
+	const std::uniform_int_distribution<int> d10(1, 10);
+	const auto roll = d10(rng);
 
-	if (seconds % 2 == 0)
+	if (roll <= 2)
 		throw std::runtime_error(
 			"Once in a blue moon, an error shall occur...");
 }
