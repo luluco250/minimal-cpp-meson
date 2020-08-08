@@ -1,2 +1,12 @@
+# OS junk.
+.DS_Store
+thumbs.db
+desktop.ini
+
+# Project build/testing folders.
 [Bb]uild/
 [Tt]est/
+
+# Editor junk (though not always, VS Code tasks.json for example).
+.vscode/
+.vs/
