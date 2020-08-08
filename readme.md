@@ -1,4 +1,4 @@
-# Minimalist C++ Meson Project
+# Minimalist C++ Meson Project Template
 
 This is an example project for C++ development using the Meson build system.
 It is intended as a simple quick start for new projects.
