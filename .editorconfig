@@ -1,0 +1,12 @@
+# Unix-style newlines and final newline at the end of file.
+end_of_line = lf
+insert_final_newline = true
+
+# Ensure unicode charset, no unexpected characters later on.
+charset = utf-8
+
+# Anyone can use whatever indentation size they want.
+indent_style = tab
+
+# Avoid unnecessary whitespace.
+trim_trailing_whitespace = true
