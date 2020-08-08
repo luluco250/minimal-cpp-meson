@@ -1,9 +1,9 @@
 #include "main.hpp"
 
+#include <chrono>
 #include <cstdlib>
 #include <iostream>
 #include <stdexcept>
-#include <chrono>
 
 namespace chr = std::chrono;
 
